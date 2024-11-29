@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="events.css" />
+        <title>Your Event Ticket</title>
+        <style>
+         
+        </style>
+    </head>
+    <body>
+        <div class="ticket-container">
+            <h1>Your Event Ticket 🎉</h1>
+            <p>Hello {{attendeeName}},</p>
+            <p>Thank you for registering for <strong>{{eventName}}</strong>! </p>
+                <p>Here's your golden ticket to an unforgettable experience:</p>
+
+            <div class="ticket">
+                <h2 class="ticket-header">YPIT Series F</h2>
+                <h2>{{eventName}} </h2>
+                <div class="event-details">
+                    <p><strong>Date:</strong> 30th November 2024</p>
+                    <p><strong>Time:</strong> 1:00 PM (No African Time, we mean it ⏰)</p>
+                    <p><strong>Venue:</strong> Bature Brewery, 256 Etim Inyang Crescent, Lekki</p>
+                    <p><strong>Ticket Type:</strong> {{ticketType}} </p>
+                    <p><strong>Ticket ID:</strong> {{ticketId}} </p>
+                </div>
+
+                <div class="barcode">
+                    <img src="{{cidForbarcodeUrl}}" alt="Ticket Barcode" />
+                </div>
+
+                <div class="ticket-info">
+                    <h3 class="important">Important Notes 📌:</h3>
+                    <p>Please arrive at least 30 minutes before the event 🕒</p>
+                    <p>This ticket is unique and can only be used once 🛑</p>
+                    <p>Please have a valid ID with you 🆔</p>
+                </div>
+            </div>
+
+            <p>If you have any questions, please don't hesitate to contact us.<br/> We're here to help! </p>
+            <p>Best regards,<br />{{organizerName}} ✨</p>
+            <div class="footer">
+                <p>We can't wait to see you there! 😊</p>
+            </div>
+        </div>
+
+       
+    </body>
+</html>
